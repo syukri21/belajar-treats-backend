@@ -13,7 +13,7 @@ untuk menjalankan nya membutuhkan NodeJS dan XAMPP (dkk)
 1. Install Backend
 
 	
-	1. Download Frontend Melalui Link berikut
+	1. Download Backend Melalui Link berikut
    	   https://github.com/syukri21/GBK4-soal-6-7-backend.git
 
    	2. Jalankan Perintah : npm install
