@@ -7,7 +7,15 @@ Bahasa menggunakan NodeJS, dan Mysql
 
 untuk menjalankan nya membutuhkan NodeJS dan XAMPP (dkk)
 
+NOTE 
 
+SOAL 1 - 5 LINK GITHUB : https://github.com/syukri21/GBK4-soal1-5.git
+
+SOAL 6 - 7 LINK GITHUB
+   frontend : https://github.com/syukri21/GBK4-soal-6-7-frontend.git
+   backend :https://github.com/syukri21/GBK4-soal-6-7-backend.git
+
+   _______________________________________
 
 
 1. Install Backend
