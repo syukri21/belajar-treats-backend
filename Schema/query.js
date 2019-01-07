@@ -1,11 +1,10 @@
-const { GraphQLObjectType } = require("graphql");
+const { GraphQLObjectType } = require('graphql');
 
-var Queries = require("../Model/queries");
+var Queries = require('../Model/queries');
 
 module.exports = new GraphQLObjectType({
-  name: "RootQueryType",
-  fields: {
-    Produks: Queries.Produks,
-   Produk : Queries.Produk
-  }
+	name: 'RootQueryType',
+	fields: {
+		Users: Queries.Users
+	}
 });

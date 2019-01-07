@@ -3,10 +3,11 @@ const router = require('express').Router();
 
 const schema = require('../Schema/index');
 
-router.post('/', graphqlHTTP({
-    schema,
-    graphiql: "!util.isProduction()"
-}))
-
+router.post(
+	'/',
+	graphqlHTTP({
+		schema
+	})
+);
 
 module.exports = router;

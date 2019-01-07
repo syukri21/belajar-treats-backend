@@ -1,52 +1,33 @@
 let {
-  GraphQLID,
-  GraphQLString,
-  GraphQLFloat,
-  GraphQLObjectType,
-  GraphQLNonNull,
-  GraphQLList
-} = require("graphql");
+	GraphQLID,
+	GraphQLString,
+	GraphQLFloat,
+	GraphQLObjectType,
+	GraphQLNonNull,
+	GraphQLList
+} = require('graphql');
 
-var CRUD = require("../Db/crud");
+var CRUD = require('../Db/crud');
 
 // Defines the type
 
-
-var ProdukType = new GraphQLObjectType({
-  name: "Produk",
-  description: "Produk",
-  fields: {
-    id: {
-      type: new GraphQLNonNull(GraphQLID)
-    },
-    name: {
-      type: new GraphQLNonNull(GraphQLString)
-    },
-
-  }
+var UsersType = new GraphQLObjectType({
+	name: 'Users',
+	description: 'Users',
+	fields: {
+		id: {
+			type: new GraphQLNonNull(GraphQLID)
+		},
+		username: {
+			type: new GraphQLNonNull(GraphQLString)
+		},
+		email: {
+			type: new GraphQLNonNull(GraphQLString)
+		},
+		password: {
+			type: new GraphQLNonNull(GraphQLString)
+		}
+	}
 });
 
-var ProduksType = new GraphQLObjectType({
-  name: "Produks",
-  description: "Produk",
-  fields: {
-    id: {
-      type: new GraphQLNonNull(GraphQLID)
-    },
-    name: {
-      type: new GraphQLNonNull(GraphQLString)
-    },
-    Produk : {
-      type: new GraphQLList(ProdukType),
-       resolve: function(parent, args) {
-      return CRUD.getAllProduk(parent.id);
-      }
-    }
-  }
-
-
-});
-
-
-
-module.exports = {ProduksType, ProdukType};
+module.exports = { UsersType };
